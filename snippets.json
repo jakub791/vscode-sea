@@ -1,0 +1,55 @@
+{
+  "If Statement": {
+    "prefix": [
+      "if"
+    ],
+    "description": "A if statement",
+    "body": [
+      "if (${1:condition}) {",
+      "\t ${2:code}",
+      "}"
+    ]
+  },
+  "If Else Statement": {
+    "prefix": [
+      "if else"
+    ],
+    "body": [
+      "if (${1:condition}) {",
+      "\t ${2:code}",
+      "}",
+      "else {",
+      "\t ${code}",
+      "}"
+    ],
+    "description": "A if statement with else block"
+  },
+  "If Else If Else Statement": {
+    "prefix": [
+      "if else if else"
+    ],
+    "body": [
+      "if (${1:condition}) {",
+      "\t ${2:code}",
+      "}",
+      "else if (${3:condition}) {",
+      "\t ${code}",
+      "}",
+      "else {",
+      "\t ${4:code}",
+      "}"
+    ],
+    "description": "A if statement with else if and else blocks"
+  },
+  "Function definition": {
+    "prefix": [
+      "function definition"
+    ],
+    "body": [
+      "function ${1|void,int,string,bool|} (${2|int,string,bool|} ${3:param}) {",
+      "\t ${4:code}",
+      "}"
+    ],
+    "description": "A function definition"
+  }
+}

@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Sea",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numeric"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.sea",
+					"match": "\\b(if|else|while|for|break|continue|return)\\b"
+				},
+				{
+					"name": "keyword.sea",
+					"match": "\\b(until|function|return|int|string|bool|void)\\b"
+				},
+				{
+					"name": "keyword.operator.sea",
+					"comment": "+, -, *, /, <<, <=, <, =, !, ==, !=, >, >>, >=, |, ||, &, &&, %",
+					"match": "[\\+\\-\\*/]|<<|>>|[<>=!]=?|&&?|%"
+				},
+				{
+					"name": "constant.language.boolean.sea",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "variable.name",
+					"begin": "[a-z]|[A-Z]",
+					"end": "\\b"
+				}
+			]
+		},
+		"numeric": {
+			"patterns": [
+				{
+					"name": "constant.numeric.sea",
+					"match": "\\d|(?<=\\d)\\."
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.sea",
+			"begin": "\"",
+			"end": "\""
+		}
+	},
+	"scopeName": "source.sea"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "sea",
+  "displayName": "Sea",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "jakub791",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sea",
+        "aliases": [
+          "Sea",
+          "sea"
+        ],
+        "extensions": [
+          ".sea"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sea",
+        "scopeName": "source.sea",
+        "path": "./syntaxes/sea.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "sea",
+        "path": "./snippets.json"
+      }
+    ]
+  }
+}
