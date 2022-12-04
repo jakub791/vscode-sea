@@ -4,6 +4,10 @@
   "description": "",
   "version": "0.0.1",
   "publisher": "jakub791",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakub791/sea"
+  },
   "engines": {
     "vscode": "^1.73.0"
   },
