@@ -1,5 +1,5 @@
 ## Sea
-Extension for the [Sea](https://github.com/FlamemasterNXF/Sea) Programming language.
+VScode extension for the [Sea](https://github.com/FlamemasterNXF/Sea) Programming language.
 
 ## Features
 - Syntax highlighting.
