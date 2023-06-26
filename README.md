@@ -8,4 +8,4 @@ VScode extension for the [Sea](https://github.com/FlamemasterNXF/Sea) Programmin
 ![](/assets/snippets.png)
 
 ## TODO
-- Create a language server.
+- Create a language service.
